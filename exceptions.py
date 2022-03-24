@@ -75,7 +75,8 @@ def produce_overflow_error():
 
 # FileNotFoundError
 def produce_file_not_found_error():
-    pass
+    with open('haiku.txt', 'r') as file:
+        text = file.read()
 
 
 # UnicodeEncodeError

@@ -47,12 +47,18 @@ def produce_name_error():
 
 # UnboundLocalError
 def produce_unbound_local_error():
-    pass
+    counter = 0
+    def increment():
+        # global counter
+        counter += 1
+    increment()
 
 
 # TypeError
 def produce_type_error():
-    pass
+    text = "python"
+    number = 2
+    print(text + number)
 
 
 # ValueError
@@ -62,8 +68,7 @@ def produce_value_error():
 
 # ZeroDivisionError
 def produce_zero_division_error():
-    pass
-
+    print(20/0)
 
 # OverflowError
 def produce_overflow_error():
@@ -72,7 +77,8 @@ def produce_overflow_error():
 
 # FileNotFoundError
 def produce_file_not_found_error():
-    pass
+    with open('haiku.txt', 'r') as file:
+        text = file.read()
 
 
 # UnicodeEncodeError

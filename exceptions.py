@@ -24,14 +24,14 @@
 
 # AttributeError - EXAMPLE
 def produce_attribute_error():
-    # print(1.234.upper())
-    pass
+    print(12.34.upper())
+
 
 
 # KeyError
 def produce_key_error():
-    pass
-
+    ages = {"tom": 3, "Kim": 32, "Lee": 23}
+    print(ages["jack"])
 
 # IndexError
 def produce_index_error():
@@ -89,7 +89,8 @@ def produce_unicode_encode_error():
 
 # ModuleNotFoundError
 def produce_module_not_found_error():
-    pass
+    import a
+    print (a.find())
 
 
 # ImportError

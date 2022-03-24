@@ -54,7 +54,9 @@ def produce_unbound_local_error():
 
 # TypeError
 def produce_type_error():
-    pass
+    text = "python"
+    number = 2
+    print(text + number)
 
 
 # ValueError

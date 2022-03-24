@@ -88,7 +88,8 @@ def produce_unicode_encode_error():
 
 # ModuleNotFoundError
 def produce_module_not_found_error():
-    pass
+    import a
+    print (a.find())
 
 
 # ImportError

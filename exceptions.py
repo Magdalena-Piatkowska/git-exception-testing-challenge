@@ -91,4 +91,4 @@ def produce_module_not_found_error():
 
 # ImportError
 def produce_import_error():
-    pass
+    from lol import lol

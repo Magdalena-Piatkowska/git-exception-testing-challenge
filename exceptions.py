@@ -45,7 +45,11 @@ def produce_name_error():
 
 # UnboundLocalError
 def produce_unbound_local_error():
-    pass
+    counter = 0
+    def increment():
+        # global counter
+        counter += 1
+    increment()
 
 
 # TypeError

@@ -63,7 +63,7 @@ def produce_type_error():
 
 # ValueError
 def produce_value_error():
-    pass
+    num = int("string")
 
 
 # ZeroDivisionError

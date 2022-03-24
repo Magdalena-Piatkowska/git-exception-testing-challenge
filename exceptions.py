@@ -35,12 +35,14 @@ def produce_key_error():
 
 # IndexError
 def produce_index_error():
-    pass
+    animals = ['lion', 'tiger', 'bear']
+    print(animals[3])
 
 
 # NameError
 def produce_name_error():
-    pass
+    spelling = 'abc'
+    print(spellling)
 
 
 # UnboundLocalError

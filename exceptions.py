@@ -84,7 +84,8 @@ def produce_file_not_found_error():
 
 # UnicodeEncodeError
 def produce_unicode_encode_error():
-    pass
+    u = 'é'
+    print("ASCII Representation of é: ", u.encode('ascii'))
 
 
 # ModuleNotFoundError
